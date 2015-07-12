@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour
 	public float screenWidth;
 	public float screenHeight;
 
-	//PlayerHealth playerHealth;
+	PlayerHealth playerHealth;
 
 	
 	public Vector3 GetMovementVector()
@@ -42,7 +42,7 @@ public class CameraMovement : MonoBehaviour
 		cameraMovement = this;
 		screenHeight = 2*Camera.main.orthographicSize;
 		screenWidth = screenHeight*Camera.main.aspect;
-		//playerHealth = GetComponentInChildren<PlayerHealth>();
+		playerHealth = GetComponentInChildren<PlayerHealth>();
 		
 		waypoints[0].LookAt(transform.position);
 		for(int x = 1; x < waypoints.Count; x++)
@@ -55,7 +55,7 @@ public class CameraMovement : MonoBehaviour
 	void FixedUpdate()
 	{
 		// make the camera move
-		if (waypoints.Count != 0)// && !playerHealth.isDead)
+		if (waypoints.Count != 0 && !playerHealth.isDead)
 		{
 			if(!fightingBoss)
 			{

@@ -1,14 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Prototype\Assets\_Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\EnemyHealth.cs">
     <Files>
-      <File FileName="Assets\_Scripts\GameController.cs" Line="19" Column="14" />
-      <File FileName="Assets\_Scripts\ShipMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\CheckpointBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\DestroyByBoundary.cs" Line="31" Column="17" />
-      <File FileName="..\Prototype\Assets\_Scripts\PlayerController.cs" Line="19" Column="24" />
-      <File FileName="Assets\_Scripts\CameraMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\Shooting.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\EnemyToWaypoint.cs" Line="7" Column="12" />
+      <File FileName="Assets\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\EnemyHealth.cs" Line="37" Column="50" />
+      <File FileName="Assets\_Scripts\ShipMovement.cs" Line="47" Column="5" />
+      <File FileName="Assets\_Scripts\CameraMovement.cs" Line="73" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
