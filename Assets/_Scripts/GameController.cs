@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
 	public GUIText restartText;
 	public GUIText gameOverText;
 	public GUIText clockText;
-	
+	GameController gamecontroller;
 	bool gameOver;
 	bool finish;
 	bool isPause;
@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour
 	
 	void Start ()
 	{
+		GameController gamecontroller = this;
+	
 		gameOver = false;
 		restart = false;
 		finish = false;

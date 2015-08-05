@@ -16,7 +16,10 @@ public class CheckpointBehavior : MonoBehaviour
 	public int sceneToLoad;
 	public string speaker;
 	public bool triggerEnemies;
-	
+	public bool switchPath;
+	public int path;
+	GameObject plane;
+
 	private void OnTriggerEnter(Collider col)
 	{	
 
@@ -49,7 +52,23 @@ public class CheckpointBehavior : MonoBehaviour
 			this.cameraWaypoint = false;
 
 		}
-		
+
+		if (this.switchPath)
+		{	
+			plane.tag="Plane";
+			if(path == 1){
+				plane.transform.Translate(Vector3.left * 55.0f*Time.deltaTime);
+				path = 2;
+			};
+			if(path == 2){
+
+				path = 1;
+			};
+			 
+			
+		}
+
+		//TODO:Implement next
 /*		if (this.triggerEnemies)
 		{
 			foreach (var enemy in this.enemiesToTrigger)

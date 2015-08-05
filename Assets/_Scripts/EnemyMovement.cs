@@ -17,4 +17,10 @@ public class EnemyMovement : CameraMovement
 			waypoints[x].LookAt(waypoints[x-1].transform.position);
 		}
 	}
+
+	void FixedUpdate()
+	{
+		// make the camera move
+		Move ();
+	}
 }

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{E02719D4-7EFC-3EE4-C07A-FF5B5B97C414}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtAccretion_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtAdvancedBelt_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtAtmosphere_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtBeltGroup_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtBeltModel_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtBelt_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtBoxStarfield_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtCloudsphere_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtComponentPool_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtCorona_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtCustomBelt_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtCustomStarfield_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtDepth_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtDisplacedTerrain_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtEditor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtEllipticalStarfield_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtExtractCubemap.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtExtractShadowmap.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtJovian_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtNebulaStarfield_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtObjectPool_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtObserver_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtProminence_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtRingShadow_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtRing_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSimpleBelt_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSingularity_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSkysphere_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSnapToTerrain_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSpacetimeWell_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSpacetime_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSphereShadow_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtSpiralStarfield_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtStarfieldGroup_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtStarfieldModel_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtStarfield_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtTerrainPatch_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtTerrain_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtThrusterFlame_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtThrusterFlare_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtThruster_Editor.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Editor\SgtWrappedStarfield_Editor.cs" />
+     <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/androidplayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WP8.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/wp8support/UnityEditor.WP8.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Metro.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/metrosupport/UnityEditor.Metro.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.BB10.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/blackberryplayer/UnityEditor.BB10.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SamsungTV.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/stvplayer/STVPlayer/UnityEditor.SamsungTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/webglsupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/linuxstandalonesupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{FE084F35-4908-DB7A-9CC3-8F4230D689E9}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{81E3C3E8-FDDC-61D6-3D50-3397B858776E}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -46,16 +46,81 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DamageByContact.cs" />
-     <Compile Include="Assets\EnemyHealth.cs" />
-     <Compile Include="Assets\PlayerHealth.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtBeltAsteroid.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtBeltAsteroidVariant.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtClassPool.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtComponentPool.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtCoronaOuter.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtEditorHelper.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtForceType.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtHelper.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtNebulaSource.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtObjectPool.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtOutputMode.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtPatchBuilder.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtProceduralMesh.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtRangeAttribute.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtRenderQueue.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtSeedAttribute.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Library\SgtStarfieldStar.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtAccretion.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtAdvancedBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtAtmosphere.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtBeltGroup.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtBeltModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtBoxStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCloudsphere.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCloudsphereModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCorona.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCustomBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtCustomStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtDepth.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtDisplacedTerrain.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtEllipticalStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtJovian.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtJovianModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtNebulaStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtObserver.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtPatch.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtProminence.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtProminencePlane.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtRequireObject.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtRing.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtRingSegment.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtRingShadow.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtShadow.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSimpleBelt.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSingularity.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSingularityModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSkysphere.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSkysphereModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSnapToTerrain.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSpacetime.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSpacetimeWell.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSphereShadow.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtSpiralStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtStarfield.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtStarfieldGroup.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtStarfieldModel.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtTerrain.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtThruster.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtThrusterFlame.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtThrusterFlare.cs" />
+     <Compile Include="Assets\Space Graphics Toolkit\Scripts\Player\SgtWrappedStarfield.cs" />
+     <Compile Include="Assets\_Scripts\Bank.cs" />
      <Compile Include="Assets\_Scripts\CameraMovement.cs" />
      <Compile Include="Assets\_Scripts\CheckpointBehavior.cs" />
+     <Compile Include="Assets\_Scripts\DamageByContact.cs" />
      <Compile Include="Assets\_Scripts\DestroyByBoundary.cs" />
-     <Compile Include="Assets\_Scripts\EnemyToWaypoint.cs" />
+     <Compile Include="Assets\_Scripts\EnemyHealth.cs" />
+     <Compile Include="Assets\_Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\_Scripts\FPSCounter.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\Mover.cs" />
+     <Compile Include="Assets\_Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\_Scripts\ScrollTexture.cs" />
      <Compile Include="Assets\_Scripts\ShipMovement.cs" />
      <Compile Include="Assets\_Scripts\Shooting.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
@@ -71,6 +136,10 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{FE084F35-4908-DB7A-9CC3-8F4230D689E9}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

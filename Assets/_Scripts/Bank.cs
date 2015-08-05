@@ -3,27 +3,44 @@ using System.Collections;
 
 public class Bank : MonoBehaviour
 {
+
 	public float doubleTapDelay = 0.2f;
 	public float barrelRollDuration = 1.0f;
-	
+	public Transform ship;
+
 	private float time = float.MaxValue;
-	private bool buttonDown = false;
+	public bool buttonDown = false;
 	private bool inBarrelRoll = false;
-	
+	public int count;
+
+	float bankAxis;
+	ShipMovement shipMovement;
+
+	void Start(){
+		GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		if (player != null) {
+			shipMovement = player.GetComponent <ShipMovement> ();
+		}
+	}
 	// Update is called once per frame
 	void Update ()
 	{
 		if(!inBarrelRoll)
 		{
-			float bankAxis = Input.GetAxis("Bank");
+			bankAxis = Input.GetAxis("Bank");
+			float moveHorizontal = Input.GetAxis ("Horizontal");
 			
 			//Single axis method (For windows/keyboard)
-			Vector3 newRotationEuler = transform.rotation.eulerAngles;
-			newRotationEuler.z = -90*bankAxis;
-			Quaternion newQuat = Quaternion.identity;
-			newQuat.eulerAngles = newRotationEuler;
-			transform.rotation = newQuat;
-			
+			if (bankAxis != 0.0f){
+				Vector3 newRotationEuler = ship.transform.rotation.eulerAngles;
+				newRotationEuler.z = - 90*bankAxis;
+				//lateral speed boost
+				newRotationEuler.y = 60*moveHorizontal;
+				shipMovement.speed = 40f;
+				Quaternion newQuat = Quaternion.identity;
+				newQuat.eulerAngles = newRotationEuler;
+				transform.rotation = newQuat;
+			}
 			//What we want:
 			//We need a timer.  If you hit the button (Axis switches from 0 to non-0) the timer starts,
 			//it resets when you go from 0 to non-zero again, and does a barrel roll if you do this within the time limit
@@ -31,17 +48,22 @@ public class Bank : MonoBehaviour
 			if(bankAxis == 0.0f)
 			{
 				buttonDown = false;
+				shipMovement.speed =20f;
 			}
 			//We are not at 0!
 			else if(buttonDown == false)
-			{
+			{	
 				buttonDown = true;
+			
+
+
 				if(time < doubleTapDelay)
 				{	
 					if(bankAxis < 0.0f)
 					{StartCoroutine("BarrelRollLeft");}
 					else if(bankAxis > 0.0f)
 					{StartCoroutine("BarrelRollRight");}
+
 				}
 				time = 0.0f;
 			}
@@ -85,6 +107,7 @@ public class Bank : MonoBehaviour
 		}
 		
 		inBarrelRoll = false;
+		bankAxis = 0.0f;
 	}
 
 	IEnumerator BarrelRollRight()
@@ -122,5 +145,6 @@ public class Bank : MonoBehaviour
 		}
 		
 		inBarrelRoll = false;
+		bankAxis = 0.0f;
 	}
 }
