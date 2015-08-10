@@ -36,7 +36,7 @@ public class Bank : MonoBehaviour
 				newRotationEuler.z = - 90*bankAxis;
 				//lateral speed boost
 				newRotationEuler.y = 60*moveHorizontal;
-				shipMovement.speed = 40f;
+				shipMovement.bankSpeed = 30f;
 				Quaternion newQuat = Quaternion.identity;
 				newQuat.eulerAngles = newRotationEuler;
 				transform.rotation = newQuat;
@@ -48,7 +48,7 @@ public class Bank : MonoBehaviour
 			if(bankAxis == 0.0f)
 			{
 				buttonDown = false;
-				shipMovement.speed =20f;
+				shipMovement.bankSpeed =20f;
 			}
 			//We are not at 0!
 			else if(buttonDown == false)

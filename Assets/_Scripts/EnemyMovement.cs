@@ -21,6 +21,6 @@ public class EnemyMovement : CameraMovement
 	void FixedUpdate()
 	{
 		// make the camera move
-		Move ();
+		//Move ();
 	}
 }

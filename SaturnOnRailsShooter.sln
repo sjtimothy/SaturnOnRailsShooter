@@ -5,8 +5,6 @@ Project("{4F8B3118-5564-0D89-6B9C-E11FD1D6CACC}") = "SaturnOnRailsShooter", "Ass
 EndProject
 Project("{4F8B3118-5564-0D89-6B9C-E11FD1D6CACC}") = "SaturnOnRailsShooter", "Assembly-CSharp.csproj", "{81E3C3E8-FDDC-61D6-3D50-3397B858776E}"
 EndProject
-Project("{4F8B3118-5564-0D89-6B9C-E11FD1D6CACC}") = "SaturnOnRailsShooter", "Assembly-CSharp-Editor.csproj", "{E02719D4-7EFC-3EE4-C07A-FF5B5B97C414}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,15 +19,11 @@ Global
 		{81E3C3E8-FDDC-61D6-3D50-3397B858776E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81E3C3E8-FDDC-61D6-3D50-3397B858776E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81E3C3E8-FDDC-61D6-3D50-3397B858776E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E02719D4-7EFC-3EE4-C07A-FF5B5B97C414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E02719D4-7EFC-3EE4-C07A-FF5B5B97C414}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E02719D4-7EFC-3EE4-C07A-FF5B5B97C414}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E02719D4-7EFC-3EE4-C07A-FF5B5B97C414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																									GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

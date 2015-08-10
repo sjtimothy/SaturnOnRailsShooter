@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\Bank.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\ShipMovement.cs">
     <Files>
-      <File FileName="Assets\_Scripts\ShipMovement.cs" Line="47" Column="36" />
-      <File FileName="Assets\_Scripts\Bank.cs" Line="66" Column="6" />
-      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Assets\Space Graphics Toolkit\Scripts\Library\SgtClassPool.cs" Line="25" Column="54" />
-      <File FileName="Assets\_Scripts\PlayerHealth.cs" Line="48" Column="4" />
-      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Assets\Space Graphics Toolkit\Scripts\Editor\SgtEditor.cs" Line="118" Column="3" />
+      <File FileName="Assets\_Scripts\CameraMovement.cs" Line="66" Column="17" />
+      <File FileName="Assets\_Scripts\ShipMovement.cs" Line="81" Column="145" />
+      <File FileName="Assets\_Scripts\Bank.cs" Line="56" Column="23" />
+      <File FileName="Assets\_Scripts\CheckpointBehavior.cs" Line="54" Column="4" />
+      <File FileName="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Assets\_Scripts\EnemyMovement.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

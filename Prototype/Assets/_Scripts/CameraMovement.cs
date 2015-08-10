@@ -70,7 +70,6 @@ public class CameraMovement : MonoBehaviour
 		// Camera follow distance
 		Vector3 shipPos = ShipMovement.shipMovement.transform.localPosition;
 		shipPos.z = 35;
-		shipPos.y = -.9f;
 		ShipMovement.shipMovement.transform.localPosition = shipPos;
 	}
 }
