@@ -18,11 +18,11 @@ public class DestroyByBoundary : MonoBehaviour
 
 	void OnTriggerExit (Collider other) 
 	{
-			if (other.tag == "Enemy" || other.tag == "Projectile") {
+			if (other.tag == TagsAndEnums.enemy || other.tag == TagsAndEnums.projectile) {
 				Destroy (other.gameObject);
 			} 
 			
-			if (other.tag == "Player") {
+		if (other.tag == TagsAndEnums.player) {
 				return;
 				//playerHealth.TakeDamage(1000);
 			} 

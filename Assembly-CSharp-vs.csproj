@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ShipShooting.cs" />
      <Compile Include="Assets\_Scripts\Bank.cs" />
      <Compile Include="Assets\_Scripts\CameraMovement.cs" />
      <Compile Include="Assets\_Scripts\CheckpointBehavior.cs" />
@@ -53,14 +54,19 @@
      <Compile Include="Assets\_Scripts\DestroyByBoundary.cs" />
      <Compile Include="Assets\_Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\_Scripts\EnemyMovement.cs" />
+     <Compile Include="Assets\_Scripts\EnemyShooting.cs" />
      <Compile Include="Assets\_Scripts\FPSCounter.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
+     <Compile Include="Assets\_Scripts\Missile.cs" />
      <Compile Include="Assets\_Scripts\Mover.cs" />
      <Compile Include="Assets\_Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\_Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\_Scripts\PrefabAccessor.cs" />
+     <Compile Include="Assets\_Scripts\Projectile.cs" />
      <Compile Include="Assets\_Scripts\ScrollTexture.cs" />
      <Compile Include="Assets\_Scripts\ShipMovement.cs" />
      <Compile Include="Assets\_Scripts\Shooting.cs" />
+     <Compile Include="Assets\_Scripts\TagsAndEnums.cs" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

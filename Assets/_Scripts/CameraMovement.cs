@@ -63,7 +63,7 @@ public class CameraMovement : MonoBehaviour
 		
 		// make the ship be 15 units in front of the camera
 		Vector3 shipPos = ShipMovement.shipMovement.transform.localPosition;
-		shipPos.z = 15;
+		shipPos.z = 10;
 		ShipMovement.shipMovement.transform.localPosition = shipPos;
 	}
 }

@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class EnemyHealth : MonoBehaviour
+public class EnemyHealth : PlayerHealth
 {
-    public int startingHealth;
-    public int currentHealth;
+   // public int startingHealth;
+    //public int currentHealth;
 	  
     CapsuleCollider capsuleCollider;
 //  bool isDead;
@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
 	public int scoreValue = 0;
 	public GameObject dropItem;
 	public GameObject enemyExplosion;
-	public GameObject hitExplosion;
+	//public GameObject hitExplosion;
 
 	Transform enemyTransform;
 	Shooting enemyController;
@@ -54,20 +54,20 @@ public class EnemyHealth : MonoBehaviour
 	}
 	
 	
-	public void TakeDamage (int amount)
-    {
-
-		currentHealth +=- amount;
-
-		//Instantiate(hitExplosion, transform.position, transform.rotation);
-			   
-
-        if(currentHealth <= 0)
-        {	
-//			isDead = true;
-            Death ();
-        }
-    }
+//	public void TakeDamage (int amount)
+//    {
+//
+//		currentHealth +=- amount;
+//
+//		//Instantiate(hitExplosion, transform.position, transform.rotation);
+//			   
+//
+//        if(currentHealth <= 0)
+//        {	
+////			isDead = true;
+//            Death ();
+//        }
+//    }
 
 
     void Death ()
