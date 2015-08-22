@@ -64,7 +64,7 @@ public class PrefabAccessor : MonoBehaviour
         prefabAccessor = this;
     }
 
-    public AudioClip GetRandomeSound(List<AudioClip> audioList)
+    public AudioClip GetRandomSound(List<AudioClip> audioList)
     {
         return audioList[Random.Range(0, audioList.Count)];
     }

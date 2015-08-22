@@ -26,7 +26,7 @@ public class EnemyShooting : MonoBehaviour {
 	IEnumerator Aim()
 	{
 		while (target != null && !target.GetComponent<PlayerHealth>().isDead)
-		{	Debug.Log("Aim");
+		{	
 			Vector3 targetDirection = target.transform.position - rotatingObject.position;
 			Vector3 newDirection = Vector3.RotateTowards(rotatingObject.forward, targetDirection, Time.deltaTime * aimRotationSpeed, 0);
 			rotatingObject.rotation = Quaternion.LookRotation(newDirection);
@@ -45,7 +45,11 @@ public class EnemyShooting : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player")
+		if (other.gameObject.tag == TagsAndEnums.projectile) 
+		{
+			return;	
+		}
+		if (other.gameObject.tag == TagsAndEnums.player)
 		{
 			target = other.gameObject;
 			if (aimRotationSpeed != 0) // floating point persision won't matter
@@ -57,7 +61,7 @@ public class EnemyShooting : MonoBehaviour {
 	
 	void OnTriggerExit(Collider other)
 	{
-		if (other.gameObject.tag == "Player")
+		if (other.gameObject.tag == TagsAndEnums.player)
 			target = null;
 	}
 	

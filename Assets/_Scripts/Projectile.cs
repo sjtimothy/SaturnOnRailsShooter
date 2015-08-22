@@ -93,11 +93,21 @@ public abstract class Projectile : MonoBehaviour
 		    armed)
         {
             hitObject = true;
-			if (other.tag == TagsAndEnums.enemy || other.tag == TagsAndEnums.player)
-            {
+			if (other.tag == TagsAndEnums.player)
+			{	Debug.Log ("player hit");
 				PlayerHealth health = other.gameObject.GetComponent<PlayerHealth>();
  				health.TakeDamage(damage);
             }
+			if (other.tag == TagsAndEnums.enemy)
+			{
+				EnemyHealth enemyHealth = other.gameObject.GetComponent <EnemyHealth>();
+				if (enemyHealth == null)
+				{
+					Debug.Log ("Cannot find 'EnemyHealth' script");
+				}
+				enemyHealth.TakeDamage(damage);
+				Debug.Log ("enemy hit");
+			}
         }
     }
 }

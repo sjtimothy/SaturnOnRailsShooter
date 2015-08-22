@@ -21,6 +21,7 @@ public class ShipShooting : MonoBehaviour
     public TagsAndEnums.ProjectileType projectileType;
 	public Transform[] muzzelPoints;
 
+
 	[System.ComponentModel.DefaultValue(0)]
 	private int weaponUpgradeLevel;
 	public int WeaponUpgradeLevel 
@@ -38,13 +39,16 @@ public class ShipShooting : MonoBehaviour
 	private float lastShootTime = 0;
     private AudioSource audioSource;
 	private PlayerHealth playerHealth;
+	private ShipMovement shipMovement;
 
     void Start()
     {
         audioSource = GetComponentInParent<AudioSource>();
-		playerHealth = GetComponentInChildren<PlayerHealth>();
+		playerHealth = GetComponent<PlayerHealth>();
+		shipMovement = GetComponent<ShipMovement> ();
 		instance = this;
     }
+	
     
     // Update is called once per frame
     void Update()
@@ -59,7 +63,7 @@ public class ShipShooting : MonoBehaviour
         {
 			lastShootTime = Time.time;
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			Ray ray = new Ray(shipMovement.transform.position, shipMovement.transform.forward);
             RaycastHit[] hits = Physics.RaycastAll(ray, Mathf.Infinity);
             RaycastHit mainHit = new RaycastHit();
             foreach (RaycastHit hit in hits)
@@ -95,11 +99,11 @@ public class ShipShooting : MonoBehaviour
 			foreach(Projectile proj in projList)
 			{
 				proj.transform.LookAt(mainHit.point);
-				Vector3 aimVector = Vector3.Normalize(transform.forward);// - mainHit.point);
+				Vector3 aimVector = Vector3.Normalize(transform.position - mainHit.point);
 				proj.Intercept(aimVector, CameraMovement.cameraMovement.speed);
 			}
 
-            PlayShootSound();
+           // PlayShootSound();
         }
 
         if (!Application.isMobilePlatform)
@@ -165,7 +169,7 @@ public class ShipShooting : MonoBehaviour
 
     void PlayShootSound()
     {
-        audioSource.clip = PrefabAccessor.prefabAccessor.GetRandomeSound(PrefabAccessor.prefabAccessor.shootSounds);
+        audioSource.clip = PrefabAccessor.prefabAccessor.GetRandomSound(PrefabAccessor.prefabAccessor.shootSounds);
         audioSource.Play();
     }
 }

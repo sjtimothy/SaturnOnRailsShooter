@@ -81,17 +81,10 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage (int amount)
     {
         damaged = true;
-//		if (shieldSlider.value >= 0) 
-//		{
-//			shieldSlider.value -= amount;	
-//			//reset shield recharge delay count
-//		}
-//
-//		if (shieldSlider.value <= 0) 
-//		{
+
 		currentHealth -= amount;
 		healthSlider.value = currentHealth;			
-//		}
+
 
 		if(currentHealth <= 0 && !isDead)
 		{	

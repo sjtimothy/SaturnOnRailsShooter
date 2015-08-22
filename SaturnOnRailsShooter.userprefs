@@ -1,18 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\Missile.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\EnemyHealth.cs">
     <Files>
-      <File FileName="SaturnOnRailsShooter.sln" Line="46" Column="8" />
-      <File FileName="Assets\_Scripts\Shooting.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\ShipMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\Bank.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\CheckpointBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Assets\_Scripts\EnemyMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\PlayerHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\EnemyHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\Projectile.cs" Line="65" Column="28" />
-      <File FileName="Assets\_Scripts\Missile.cs" Line="19" Column="26" />
+      <File FileName="Assets\_Scripts\EnemyHealth.cs" Line="86" Column="5" />
+      <File FileName="Assets\_Scripts\Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\Missile.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\EnemyShooting.cs" Line="1" Column="1" />
       <File FileName="Assets\ShipShooting.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\GameController.cs" Line="1" Column="1" />
@@ -20,6 +12,14 @@
       <File FileName="Assets\_Scripts\DestroyByBoundary.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\TagsAndEnums.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\PrefabAccessor.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\DamageByContact.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\CameraMovement.cs" Line="1" Column="1" />
+      <File FileName="..\Blueshift-master\Blueshift-master\Assets\Scripts\Pickups\WeaponPickup.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\Shooting.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\Bank.cs" Line="1" Column="1" />
+      <File FileName="Assets\Laser.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\PlayerHealth.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

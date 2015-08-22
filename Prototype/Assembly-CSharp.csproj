@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EllipticalPath.cs" />
      <Compile Include="Assets\Floater.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\EventSystemChecker.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />

@@ -1,10 +1,14 @@
-public class EnemyMovement : CameraMovement
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class EnemyMovement : MonoBehaviour
 {
 
 	public static EnemyMovement enemyMovement = null;
 	EnemyHealth enemyHealth;
-
-	
+	public int speed;
+	public List<Transform> waypoints;
 	
 	void Start()
 	{	
@@ -20,7 +24,14 @@ public class EnemyMovement : CameraMovement
 
 	void FixedUpdate()
 	{
-		// make the camera move
-		//Move ();
+		float step = speed * Time.deltaTime;
+		Vector3 moveVector = Vector3.Normalize(transform.position - waypoints [0].transform.position);
+		transform.position = transform.position - moveVector * step;
+	
+		
+		Quaternion originalRotation = transform.rotation;
+		Vector3 targetDirection = waypoints [0].position - transform.position;
+		Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, Time.deltaTime * .2f, 0);
+		transform.rotation = Quaternion.LookRotation(newDirection);
 	}
 }

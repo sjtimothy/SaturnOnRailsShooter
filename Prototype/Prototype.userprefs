@@ -1,9 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Assets\_Scripts\CameraMovement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\EllipticalPath.cs">
     <Files>
-      <File FileName="..\Assets\_Scripts\ShipMovement.cs" Line="5" Column="8" />
-      <File FileName="..\Assets\_Scripts\CameraMovement.cs" Line="55" Column="3" />
+      <File FileName="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtMouseLook.cs" Line="1" Column="1" />
+      <File FileName="..\Assets\_Scripts\ShipMovement.cs" Line="1" Column="1" />
+      <File FileName="..\Assets\_Scripts\CameraMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\EllipticalPath.cs" Line="36" Column="26" />
+      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Prototype\Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtTooltip.cs" Line="20" Column="78" />
+      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Prototype\Assets\Space Graphics Toolkit\Scripts\Editor\SgtEditor.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Prototype\Assets\Space Graphics Toolkit\Scripts\Library\SgtClassPool.cs" Line="25" Column="54" />
+      <File FileName="c:\Users\Shelbe and Kyle\workspace\Games\3D Space Shooter\SaturnOnRailsShooter\Prototype\Assets\Space Graphics Toolkit\Scripts\Player\SgtAccretion.cs" Line="24" Column="62" />
+      <File FileName="Assets\Space Graphics Toolkit\Examples\Basic Pack\Scripts\SgtSimpleOrbit.cs" Line="25" Column="2" />
+      <File FileName="Assets\Space Graphics Toolkit\Scripts\Library\SgtHelper.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

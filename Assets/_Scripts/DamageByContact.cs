@@ -5,11 +5,10 @@ public class DamageByContact : MonoBehaviour
 {
 
 	public int damage;
-	public int damagePerShot;
 
 	protected GameController gameController;
 	protected PlayerHealth playerHealth;
-	protected EnemyHealth enemyHealth;
+	EnemyHealth enemyHealth;
 	
 
 	void Start ()
@@ -27,7 +26,7 @@ public class DamageByContact : MonoBehaviour
 			playerHealth = playerHealthObject.GetComponent <PlayerHealth>();
 		}
 
-		enemyHealth = GetComponent <EnemyHealth>();
+
 
 		if (gameController == null)
 		{
@@ -37,35 +36,26 @@ public class DamageByContact : MonoBehaviour
 		{
 			Debug.Log ("Cannot find 'PlayerHealth' script");
 		}
-		if (enemyHealth == null)
-		{
-			Debug.Log ("Cannot find 'EnemyHealth' script");
-		}
+
 	}
 
-	void OnTriggerEnter (Collider other)
+	void OnTriggerExit (Collider other)
 	{
-
-
-		if (other.tag == "Projectile")
+		
+		if (other.tag == "Enemy")
 		{	
-			Debug.Log ("Hit");
-			enemyHealth.TakeDamage(damagePerShot);
-
-
-		}
-		if (other.tag == "Obstacle")
-		{	
-			Debug.Log ("Smashed");
+			Debug.Log ("hit");
+			enemyHealth = other.gameObject.GetComponent <EnemyHealth>();
+			if (enemyHealth == null)
+			{
+				Debug.Log ("Cannot find 'EnemyHealth' script");
+			}
 			enemyHealth.TakeDamage(damage);
 			
 			
 		}
 
 
-		if (other.tag == "Player") {
-			playerHealth.TakeDamage (damage);
-		} 
 
 
 		else {

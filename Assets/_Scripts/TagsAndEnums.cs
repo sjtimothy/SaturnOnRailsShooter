@@ -19,7 +19,7 @@ public class TagsAndEnums : MonoBehaviour {
     public enum ProjectileType
     {
         missile,
-		plasmaSphere,
+		laser,
 		homerMissile,
         speedMissile
     };
